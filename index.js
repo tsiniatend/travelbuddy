@@ -23,7 +23,7 @@ const connection = mysql.createConnection({
     database: process.env.DB_database 
 });
 
-console.log(process.env.DB_host)
+
 
 app.get('/', (req, res) => {
     connection.query('SELECT * FROM friends', (err, rows, fields) => {
