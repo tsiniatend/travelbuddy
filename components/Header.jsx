@@ -49,7 +49,7 @@ const Header = ({ setType, setRatings, setCoordinates }) => {
                     placeholder="Search Google Map..."
                     variant={"filled"}
                     fontSize={18}
-                    bg={"white"}
+                    bg={"grey"}
                     color={"gray.700"}
                     _hover={{ bg: "whiteAlpha.800"}}
                     _focus={{ bg: "whiteAlpha.800"}}
@@ -69,7 +69,7 @@ const Header = ({ setType, setRatings, setCoordinates }) => {
           justifyContent={"center"}
           px={10}
           py={4}
-          bg={"white"}
+          bg={"silver"}
           rounded={"full"}
           ml={4}
           shadow="lg"
@@ -157,7 +157,7 @@ const Header = ({ setType, setRatings, setCoordinates }) => {
              justifyContent={"center"}
              px={4}
              py={2}
-             bg={"white"}
+             bg={"silver"}
              rounded={"full"}
              ml={4}
              shadow="lg"
@@ -181,7 +181,7 @@ const Header = ({ setType, setRatings, setCoordinates }) => {
              justifyContent={"center"}
              px={4}
              py={2}
-             bg={"white"}
+             bg={"silver"}
              rounded={"full"}
              ml={4}
              shadow="lg"
