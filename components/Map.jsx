@@ -65,6 +65,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places}) => {
           width={"full"}
           height={"full"}
           rounded="lg"
+          alt="dummyPhoto"
           src={
             cardData?.photo
               ? cardData?.photo?.images?.large?.url

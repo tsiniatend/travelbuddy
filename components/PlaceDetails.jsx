@@ -109,6 +109,7 @@ const PlaceDetail = ({ place }) => {
           width={"120px"}
           height={"120px"}
           rounded="lg"
+          alt="dummyPhoto"
           src={
             place.photo
               ? place.photo.images.large.url
