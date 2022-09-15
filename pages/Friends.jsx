@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from 'next/link';
 import { Box, Flex, Input, SkeletonCircle, SkeletonText, Text } from "@chakra-ui/react";
 
 const Friends = () => {
+    const [friends, setFriends] = useState([]);
+    useEffect(() => {
+        fetch("https://travelbuddykesu.herokuapp.com/")
+        .then(res =>
+         { console.log(res.json())
+            
+        })
+        
+        .then(data => {
+          setFriends(data) 
+          console.log(data)
+         
+        });  
+      },[friends]);
 return(
 <Flex
 direction={"column"}
@@ -48,6 +62,8 @@ px={2}>
     {/* <Text>Hello</Text> */}
 </Flex>
 )
+
 };
+
 
 export default Friends 

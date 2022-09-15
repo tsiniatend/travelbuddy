@@ -21,6 +21,7 @@ import Head from "next/head";
 const Home = () => {
   //set state to update one data for place is loaded
   const [places, setPlaces] = useState([]);
+ 
   //used to filter thro our ratings
   const [filteredPlaces, setFilteredPlaces] = useState([]);
   //passed to map to give location
@@ -31,6 +32,9 @@ const Home = () => {
   const [ratings, setRatings] = useState("");
   //to check if this is loading we would open it in list
   const [isLoading, setIsLoading] = useState(false);
+
+
+ 
 
   //get users current loc and intial login with a useEffect once it is loaded
   useEffect(() => {
