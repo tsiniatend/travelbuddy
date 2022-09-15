@@ -35,6 +35,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places}) => {
             {/* if there are places than we point the location  */}
             {places?.map((place, i) => (
                 <Box
+                key={`${place.latitude}-${i}`}
                 lat={Number(place.latitude)}
                 lng={Number(place.longitude)}
                 position={"realative"}

@@ -41,7 +41,7 @@ const Header = ({ setType, setRatings, setCoordinates }) => {
         <InputGroup width={"35vw"} shadow="lg">
                 <InputRightElement   
                 pointerEvents={"none"}
-               children={<BiSearch color="gray" fontSize={20} />}
+            //    children={<BiSearch color="gray" fontSize={20} />}
                 />
  {/* use chakara too create hover effect as well as placeholder */}
                 <Input 
